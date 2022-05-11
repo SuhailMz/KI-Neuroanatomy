@@ -1,0 +1,56 @@
+version: "2.0"
+
+stories:
+
+- story: happy path
+  steps:
+  - intent: greet
+  - action: utter_greet
+
+ # - intent: mood_great
+ # - action: utter_happy
+
+- story: sad path 1
+  steps:
+  - intent: greet
+  - action: utter_greet
+  - intent: mood_unhappy
+  - action: utter_cheer_up
+  - action: utter_did_that_help
+  - intent: affirm
+  - action: utter_happy
+
+- story: sad path 2
+  steps:
+  - intent: greet
+  - action: utter_greet
+  - intent: mood_unhappy
+  - action: utter_cheer_up
+  - action: utter_did_that_help
+  - intent: deny
+  - action: utter_goodbye
+
+- story: datasets_inquiry
+  steps:
+  - intent: datasets_query
+  - action: utter_datasets_info
+
+- story: written_exam_inquiry
+  steps:
+  - intent: written_exam_query
+  - action: utter_written_exam_info
+
+- story: workshops_inquiry
+  steps:
+  - intent: workshops_query
+  - action: utter_workshops_info
+  
+- story: practical_exam_inquiry
+  steps:
+  - intent: practical_exam_query
+  - action: utter_practical_exam_info
+
+- story: neuroanatomy_inquiry
+  steps:
+  - intent: neuroanatomy_query
+  - action: utter_neuroanatomy_info

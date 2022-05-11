@@ -1,0 +1,137 @@
+version: "2.0"
+
+nlu:
+- intent: greet
+  examples: |
+    - hey
+    - hello
+    - hi
+    - hello there
+    - good morning
+    - good evening
+    - moin
+    - hey there
+    - let's go
+    - hey dude
+    - goodmorning
+    - goodevening
+    - good afternoon
+
+- intent: goodbye
+  examples: |
+    - good afternoon
+    - cu
+    - good by
+    - cee you later
+    - good night
+    - bye
+    - goodbye
+    - have a nice day
+    - see you around
+    - bye bye
+    - see you later
+
+- intent: affirm
+  examples: |
+    - yes
+    - y
+    - indeed
+    - of course
+    - that sounds good
+    - correct
+
+- intent: deny
+  examples: |
+    - no
+    - n
+    - never
+    - I don't think so
+    - don't like that
+    - no way
+    - not really
+
+- intent: mood_great
+  examples: |
+    - perfect
+    - great
+    - amazing
+    - feeling like a king
+    - wonderful
+    - I am feeling very good
+    - I am great
+    - I am amazing
+    - I am going to save the world
+    - super stoked
+    - extremely good
+    - so so perfect
+    - so good
+    - so perfect
+
+- intent: mood_unhappy
+  examples: |
+    - my day was horrible
+    - I am sad
+    - I don't feel very well
+    - I am disappointed
+    - super sad
+    - I'm so sad
+    - sad
+    - very sad
+    - unhappy
+    - not good
+    - not very good
+    - extremly sad
+    - so saad
+    - so sad
+
+- intent: bot_challenge
+  examples: |
+    - are you a bot?
+    - are you a human?
+    - am I talking to a bot?
+    - am I talking to a human?
+
+- intent: datasets_query
+  examples: |
+    - Where can I find the datasets?
+    - Can we get the data sets?
+    - Can I check datasets in advacne?
+    - I need more information on the data sets
+    - tell me about the datasets
+    - How can I get slicer?
+    - I can not install slicer
+
+- intent: written_exam_query
+  examples: |
+    - tell me about the written exam
+    - When is the written exam?
+    - What about the written exam
+    - When do we get our written exam results?
+    - Will there be anatomy on the written exam?
+    - Will there be histology on the written exam?
+
+- intent: workshops_query
+  examples: |
+    - tell me about the workshops
+    - waht are the workshops about?
+    - When will we have the worksops?
+    - Is there a difference on the different days of the workshop?
+
+- intent: practical_exam_query
+  examples: |
+    - tell me about the practical exam
+    - what is the practical exam?
+    - when is the practical exam?
+    - Will there be histology on the practical exam?
+    - Will there be FLIP on the practical exam?
+    - How many questions are there on the practical exam?
+    - Can we choose what dataset we show the structures on?
+    - Where is the structure list?
+    - what about the structures
+
+- intent: neuroanatomy_query
+  examples: |
+    - tell me about neuroanatomy
+    - Are there videos for the neuroanatomy?
+    - Where can I find neuroanatomy videos?
+    - I need videos of neuroanatomy
