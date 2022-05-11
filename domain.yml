@@ -1,0 +1,57 @@
+version: "2.0"
+   
+intents:
+  - greet
+  - goodbye
+  - affirm
+  - deny
+  - mood_great
+  - mood_unhappy
+  - bot_challenge
+  - datasets_query
+  - written_exam_query
+  - workshops_query
+  - practical_exam_query
+  - neuroanatomy_query
+
+responses:
+  utter_greet:
+  - text: "Hey! I am a chatbot to help you with information about your neuroanatomy course, You can ask me for details about written exam, practical exam, workshops, neuroscience videos, and datasets"
+
+  utter_cheer_up:
+  - text: "Here is something to cheer you up:"
+    image: "https://i.imgur.com/nGF1K8f.jpg"
+
+  utter_did_that_help:
+  - text: "Did that help you?"
+
+  utter_happy:
+  - text: "Great, carry on!"
+
+
+  utter_goodbye:
+  - text: "I hope that it was helpful, you may come back at any time... good bye"
+
+  utter_iamabot:
+  - text: "I am a bot, porgramed by Karolinska Institutet - LIME department and powered by Rasa."
+
+  utter_datasets_info:
+  - text: "You can access the datasets on canvas using this link https://ki.instructure.com/courses/12290/pages/datasets-used-in-the-course?module_item_id=258402 
+    You will need to use the 3D Slicer platform to open the datasets, if you did not install Slicer before you can download it from https://download.slicer.org/ Please note that If you are using MAC OS you will have to control-click to allow slicer installation to start."
+
+  utter_written_exam_info:
+  - text: "The written exam will include questions on histology and anatomy. The results will be shared within three weeks from the exam date, for more details on the dates you can check the following link https://ki.instructure.com/courses/12290/pages/final-exam?module_item_id=258411"
+
+  utter_workshops_info:
+  - text: "The workshops will be conducted on two days that build on each other, the first day will start with the basics and on the second day, you will go way deeper."
+
+  utter_practical_exam_info:
+  - text: "The practical exam is scheduled for 25-Feb-2022 where you will need a minimum of 12 points to pass it. The exam will consist of a total of 21 questions: 11 of them on human brains/plastic models and the reaming 10 on FLIP. The practical exam will not have questions on histology.
+You can not choose what dataset you show the structures on as for each structure there will be a specific dataset to show it on. The structure list is available at this link https://ki.instructure.com/courses/12290/files/1368313?wrap=1"
+
+  utter_neuroanatomy_info:
+  - text: "Neuroanatomy videos are available at this link https://ki.instructure.com/courses/12290/pages/videos-slash-mini-lectures?module_item_id=258404"
+
+session_config:
+  session_expiration_time: 60
+  carry_over_slots_to_new_session: true
